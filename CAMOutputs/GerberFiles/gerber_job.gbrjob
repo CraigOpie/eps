@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2020-08-08T03:37:02Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.3.1"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 2,
+        "LayerNumber": 4,
+        "Name": {
+            "ProjectId": "eps"
+        },
+        "Owner": "Hawaii Space Flight Lab <amber@hsfl.hawaii.edu>",
+        "Size": {
+            "X": 90.17,
+            "Y": 95.504
+        }
+    }
+}
