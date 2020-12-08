@@ -57,8 +57,8 @@
  *   pin 25 <-- AIN4
  *   pin 26 <-- AIN5
  *   pin 27 --> +5V
- *   pin 28 --- GND
- *   pin 29 <-- Reset
+ *   pin 28 <-- Reset
+ *   pin 29 --- GND
  *   pin 30 <-- VIN
  *   
  *******************************************************************/
@@ -218,8 +218,8 @@ void DSD_EPS::getVersion()
   byte buffer_[4];
   buffer_[3] = 0x00;
   buffer_[2] = 0x00;
-  buffer_[1] = 0x03;
-  buffer_[0] = 0x01;
+  buffer_[1] = 0x04;
+  buffer_[0] = 0x00;
   delay(1);
   I2C.write(buffer_, 4);
 }
