@@ -6309,7 +6309,7 @@ Select also layer 53 (54) in CAM-Job!</description>
 <part name="U3" library="HSFL_Main_Library" deviceset="LT8609A" device=""/>
 <part name="U4" library="HSFL_Main_Library" deviceset="LT8609A" device=""/>
 <part name="U5" library="HSFL_Main_Library" deviceset="LT8609A" device=""/>
-<part name="C60" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="C60" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="C61"/>
 <part name="C61" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="C62" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="U13" library="HSFL_Main_Library" deviceset="TPS27082LDDCR" device="" value="Value"/>
@@ -6397,7 +6397,7 @@ Select also layer 53 (54) in CAM-Job!</description>
 <part name="R6" library="DSD_Passive_Library" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="LED5" library="DSD_Passive_Library" deviceset="LED_0805" device=""/>
 <part name="LED6" library="DSD_Passive_Library" deviceset="LED_0805" device=""/>
-<part name="C2" library="DSD_Passive_Library" deviceset="CAP" device="0603-CAP" value="1uF"/>
+<part name="C2" library="DSD_Passive_Library" deviceset="CAP" device="0603-CAP" value="0"/>
 <part name="R7" library="DSD_Passive_Library" deviceset="RESISTOR" device="0603-RES" value="2K"/>
 <part name="R8" library="DSD_Passive_Library" deviceset="RESISTOR" device="0603-RES" value="2K"/>
 <part name="C3" library="DSD_Passive_Library" deviceset="CAP" device="0603-CAP" value="1uF"/>
@@ -6411,8 +6411,8 @@ Select also layer 53 (54) in CAM-Job!</description>
 <part name="R9" library="DSD_Passive_Library" deviceset="RESISTOR" device="0603-RES" value="27.4K"/>
 <part name="R10" library="DSD_Passive_Library" deviceset="RESISTOR" device="0603-RES" value="10K"/>
 <part name="D8" library="DSD_Passive_Library" deviceset="DIODE" device="-SOD123" value="1N5819HW"/>
-<part name="R15" library="DSD_Passive_Library" deviceset="RESISTOR" device="0603-RES" value="1K"/>
-<part name="R16" library="DSD_Passive_Library" deviceset="RESISTOR" device="0603-RES" value="1K"/>
+<part name="R15" library="DSD_Passive_Library" deviceset="RESISTOR" device="0603-RES" value="0"/>
+<part name="R16" library="DSD_Passive_Library" deviceset="RESISTOR" device="0603-RES" value="DNP"/>
 <part name="R17" library="DSD_Passive_Library" deviceset="RESISTOR" device="0603-RES" value="100"/>
 <part name="R18" library="DSD_Passive_Library" deviceset="RESISTOR" device="0603-RES" value="1K"/>
 <part name="L1" library="DSD_Passive_Library" deviceset="IND" device="-FXL0630"/>
@@ -7237,9 +7237,6 @@ Select also layer 53 (54) in CAM-Job!</description>
 <wire x1="99.06" y1="124.46" x2="119.38" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="L1" gate="A" pin="1"/>
 <wire x1="101.6" y1="114.3" x2="99.06" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="114.3" x2="88.9" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="111.76" x2="88.9" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="124.46" x2="99.06" y2="114.3" width="0.1524" layer="91"/>
 <junction x="99.06" y="114.3"/>
 <pinref part="D8" gate="G$1" pin="2"/>
@@ -7293,6 +7290,11 @@ Select also layer 53 (54) in CAM-Job!</description>
 <pinref part="L1" gate="A" pin="2"/>
 <pinref part="U1" gate="A" pin="SW"/>
 <wire x1="116.84" y1="114.3" x2="119.38" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="88.9" y1="111.76" x2="88.9" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="116.84" x2="116.84" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="116.84" x2="116.84" y2="114.3" width="0.1524" layer="91"/>
+<junction x="116.84" y="114.3"/>
 </segment>
 </net>
 <net name="GNDA" class="0">
