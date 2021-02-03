@@ -84,5 +84,5 @@ Please review the BOM and populate as required by referencing the schematic.  Th
 
 ### Firmware
 
-Arduino: Be sure to flash the software and test the functionality prior to soldering on to the EPS.
+Arduino: Be sure to flash the software and test the functionality prior to soldering on to the EPS. <br />
 ATSAM3X8E: Please follow the documentation provided for the Arduino Due programming using the Native Port (USB).
