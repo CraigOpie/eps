@@ -1,5 +1,4 @@
 # Electronic Power Supply
-------------------------------------------------------------------------------------
 ```
 
 Vendor: Death Star Development, LLC
