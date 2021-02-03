@@ -1,27 +1,19 @@
+# Electronic Power Supply
+====================================================================================
 ```
-*******************************************************************************
-
-:::====  :::==== :::==== 	Copyright (C) 2020 Death Star Development, LLC
- :::  === :::     :::  ===	All rights reserved.  This file contains 
- ===  ===  =====  ===  === 	confidential and proprietary information of 
- ===  ===     === ===  === 	Death Star Development, LLC and is protected
- =======  ======  =======  	under U.S. and international copyright and 
-other intellectual property laws.  Distribution of this file requires
-written consent from Death Star Development, LLC legal team.  Any person or
-entity that is found to be re-distributing this material will be subject to 
-criminal and civil prosecution.  DO NOT TAKE CREDIT FOR OUR WORK.
-
-*******************************************************************************
 
 Vendor: Death Star Development, LLC
-Date Created: 
+Date Created: August 1st, 2020
 Version: 0.4.0
 
-Associated Filename:
+License: CC BY-NC-ND
+Associated Filename: All
 Associated Document: 
-      https://git.deathstardev.com/dsd-projects/eps
+      https://github.com/craigopie/eps
 
-*******************************************************************************
+```
+====================================================================================
+```
 
 Disclaimer:
 
@@ -59,22 +51,41 @@ Critical Applications:
 THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS PART OF THIS
 FILE AT ALL TIMES.
 
-*******************************************************************************
-
-Please refer to the documentation at 
-https://git.deathstardev.com/dsd-projects/eps
-for the following topics:
-
-1. Revision History
-2. Overview
-3. Software Tools and System Requirements
-4. Installation and Operating Instructions
-5. Demo Instructions
-6. Design Files
-7. Other Information
-
-Access is limited to those with specific rights as a Death Star Development
-employee, and those individuals with a need to know.
-
-*******************************************************************************
 ```
+====================================================================================
+
+# Overview
+------------------------------------------------------------------------------------
+
+### Introduction
+
+This repository provides a low cost Electronic Power Supply (EPS) in a PC-104 form factor that can be assembled by low experience individuals with limited soldering equipment.  The design provides the choice of using an Arduino controller or an ATSAM3X8E 32-bit processor.  The ATSAM3X8E provides more reliable I2C communications.  
+
+### Notes
+
+This version does not have a working WatchDog Timer.
+
+### Features
+
+Supports 8.2 Volt Batteries (2S Cell Lithium Based Chemistry).
+* (6) Solar Pannel Connections
+* (1) USB-C Connection for Programming
+* (1) Arduino Nano Every as the Micro-Controller
+* (3) 3V3 Switched Power Supplies (2A Max ea.)
+* (2) 5V Switched Power Supplies (2A Max ea.)
+* (1) 3V3 Bus Power Supply (2A Max)
+* (1) 5V Bus Power Supply (2A Max)
+* (1) I2C Bus Interface
+* (1) Serial (UART) Interface
+
+# Build
+------------------------------------------------------------------------------------
+
+### Hardware
+
+Please review the BOM and populate as required by referencing the schematic.  The 5V bus IC requires the supply and enable pins to be shorted together, using a solder bridge, during manufacturing.
+
+### Firmware
+
+Arduino: Be sure to flash the software and test the functionality prior to soldering on to the EPS.
+ATSAM3X8E: Please follow the documentation provided for the Arduino Due programming using the Native Port (USB).
